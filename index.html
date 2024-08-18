@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="Favicon.jpg">
+    <title>Automatio Pre-Alpha</title>
+</head>
+<body>
+    <h1>Automatio Pre-Alpha</h1>
+
+    <h2>Food</h2>
+    <p id="energy">Energy: 100/100</p>
+    <p id="foodamount">Food: 0</p>
+    <button id="eat">Eat Food</button>
+
+    <h2>Environment</h2> 
+
+    <h3>Forest</h3>
+    <p id="wildfood">Food in the wild: 1000</p>
+    <p id="foodperclick">Food per click: 1</p>
+    <button id="forage">Forage</button>
+
+    <p id="treeamount">Number of trees: 1000</p>  
+    <p id="woodperclick">Wood per click: 1</p>
+    <button id="getwood">Get Wood</button>
+
+    <p id="rockamount">Number of rocks: 100</p>  
+    <p id="stoneperclick">Stone per click: 1</p>
+    <button id="getstone">Pick up rock</button>
+
+    <p id="grassamount">Clumps of grass: 10000</p>
+    <p id="plantsperclick">Plant(s) per click: 1</p>
+    <button id="getplant">Gather grass</button>
+
+    <h2>Resources</h2>
+    <p id="woodamount">You have 0 piece(s) of wood.</p>
+    <p id="stoneamount">You have 0 stone(s).</p>
+    <p id="plantamount">You have 0 plant(s).</p>
+    
+    <div id="rope" style="display:none">
+        <p id="ropeperclick">Rope per click: 1</p>
+        <button id="makerope">Make rope</button>
+        <p id="ropeamount">You have 0 rope(s).</p>
+    </div>
+ 
+    <div id="tools" style="display:none">
+        <h2>Tools</h2>
+        
+        <div id="axe" style="display:none">
+            <button id="craftaxe">Craft Axe: Requires 5 wood, 5 stone, 10 ropes, and 15 energy; takes 3 seconds. Increases wood per click by 4.</button>
+        </div>
+
+        <br id="toolsspace" style="display:none">
+        <div id="hammer" style="display:none">
+            <button id="crafthammer">Craft Hammer: Requires 5 wood, 15 stone, 5 ropes, and 20 energy; takes 4 seconds. Increases stone per click by 4.</button>
+        </div>
+    </div>
+
+    <div id="buildings" style="display:none">
+        <h2>Buildings</h2>
+        <button id="campfire">Build campfire: Enables you to cook food.</button>
+    </div>
+
+    <h2>Technology</h2>
+    
+    <div id="ropediv">
+        <button id="ropemaking">Research rope making: Requires 5 wood, 5 stone, 20 plants, and 10 energy; takes 2 seconds. Unlocks rope, enables you to research toolmaking.</button>
+    </div>
+    
+    <div id="toolsdiv" style="display:none">
+        <button id="toolmaking">Research toolmaking: Requires 10 wood, 5 stone, 15 ropes, and 25 energy; takes 5 seconds. Unlocks axe, enables you to research hammer making.</button>
+    </div>
+        
+    <div id="hammerdiv" style="display:none">
+        <button id="hammermaking">Research hammer making: Requires 10 wood, 25 stone, 5 ropes, and 20 energy; takes 4 seconds. Unlocks hammer.</button>
+    </div>
+
+    <br id="techspace">
+        
+    <div id="firediv">
+        <button id="fire">Research fire: Requires 50 wood, 10 stone, 25 plants, and 25 energy; takes 5 seconds. Unlocks campfire.</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <hr>
+    Automatio
+    <br>
+    by A Random Ant
+    <br>
+    Pre-Alpha Edition
+    <br>
+    Special thanks to W3Schools for hosting this game!
+    <br>
+    Credits to Factorio for inspiring this game!
+    <br>
+    All of the code is on GitHub at https://github.com/1RandomAnt/Automatio
+</footer>
+</html>
